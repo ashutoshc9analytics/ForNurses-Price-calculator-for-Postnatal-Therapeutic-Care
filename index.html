@@ -80,8 +80,9 @@
             const dailyNurseIncentive = Math.min((hours * 100), 800);
             const totalNurseIncentive = days * dailyNurseIncentive;
             const logisticsCost = days * 400;
+            const nurseFoodSupplements = days * 125;
             const consumablesCost = days * 100;
-            const totalCostPrice = totalNurseIncentive + logisticsCost + consumablesCost;
+            const totalCostPrice = totalNurseIncentive + logisticsCost + nurseFoodSupplements +consumablesCost;
             const bestPrice = totalCostPrice * 2.2;
 
             const results = `
